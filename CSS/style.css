@@ -1,0 +1,476 @@
+/*Null Style*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-tex-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, #submit, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+#submit::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background {
+  background: url("https://i.ibb.co/6vh7hkp/IMG-20200301-110241.jpg") center/cover no-repeat fixed;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#header-img {
+  max-width: 104px;
+  max-height: 95px;
+  position: fixed;
+  left: 5px;
+  transition: 0.2s;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.5s linear 0s;
+  font-family: "Permanent Marker", cursive;
+  background-color: #F2F5F8;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+ul:hover li a {
+  filter: blur(2px);
+}
+ul:hover li a:hover {
+  letter-spacing: 2px;
+  filter: blur(0px);
+  color: #faa720;
+}
+
+li {
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+li a {
+  color: Dodgerblue;
+  transition: 0.5s;
+}
+li a:active {
+  color: #faa720;
+}
+
+main {
+  min-width: 60vw;
+  max-width: 100vw;
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  padding: 4rem 0 0 0;
+}
+
+form {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form label {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  color: #800000;
+  text-shadow: 1px 1px 1px #000;
+}
+form input {
+  width: 35vw;
+  min-width: 220px;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: 1px solid #000;
+  box-shadow: 1px 3px 2px 2px #B0C4DE, inset 1px 1px 1px 1px gray;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 5px;
+}
+form #submit {
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  min-width: 150px;
+  max-width: 300px;
+  height: 3rem;
+  font-size: 1.8rem;
+  padding: 5px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f99020;
+}
+
+#summary {
+  width: 70vw;
+  margin: 40px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: -0.5vw;
+}
+.feature .plan {
+  font-size: 5vh;
+  color: #800000;
+  margin: 0 1vw;
+}
+.feature .description {
+  padding: 2rem 5vw;
+  font-family: "Acme", sans-serif;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+iframe {
+  border: 5px solid #800000;
+  border-radius: 3px;
+  margin: 50px;
+}
+
+.pricing_wrap p {
+  font-size: 2rem;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.pricing_wrap .pricing {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+.pricing_wrap .pricing .example img {
+  width: 90%;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-left: 5%;
+}
+.pricing_wrap .pricing .example label {
+  display: block;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-family: "Acme", sans-serif;
+}
+
+.footer {
+  width: 100vw;
+  height: 7vh;
+  background-color: #800000;
+  flex-shrink: 0;
+  color: white;
+  line-height: 1.7rem;
+  text-shadow: 1px 1px 1px #000;
+  padding: 10px 0 0 20px;
+  font-family: "Acme", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    background: url("https://i.ibb.co/ChDD9wN/torii.webp") center/cover no-repeat fixed;
+  }
+
+  .feature {
+    margin: -2vw;
+  }
+  .feature .plan {
+    font-size: 4vh;
+  }
+
+  main {
+    margin-top: 7vh;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2rem 2rem;
+    grid-column-gap: 30px;
+    grid-template-areas: "summary pricing" "video contacts";
+    margin-right: 5px;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  .summary {
+    grid-area: summary;
+  }
+
+  .video {
+    grid-area: video;
+  }
+
+  .price {
+    grid-area: pricing;
+  }
+
+  .contacts {
+    grid-area: contacts;
+  }
+
+  form label {
+    white-space: nowrap;
+  }
+
+  iframe {
+    width: 60vw;
+    height: 226px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .summary {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .video {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .price {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .contacts {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+@media (max-width: 570px) {
+  .feature {
+    margin: -3vw;
+  }
+  .feature .plan {
+    font-size: 3vh;
+  }
+  .feature .description {
+    font-size: 3.5vw;
+  }
+
+  iframe {
+    width: 310px;
+    height: 174.375px;
+  }
+
+  .pricing_wrap .pricing {
+    height: 20vh;
+  }
+
+  .example label {
+    line-height: 1.3rem !important;
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 480px) {
+  ul {
+    grid-column-gap: 5px;
+  }
+  ul li {
+    margin-right: 5px;
+    font-size: 1.3rem;
+  }
+
+  form label {
+    font-size: 3rem;
+  }
+  form input {
+    height: 2rem;
+  }
+  form #submit {
+    font-size: 1.2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  ul {
+    grid-column-gap: 5px;
+  }
+  ul li {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .feature {
+    margin: -5vw;
+  }
+  .feature .description {
+    font-size: 3vw;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    grid-column-gap: 2px;
+  }
+  ul li {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 320px) {
+  .background {
+    background: url("https://i.ibb.co/NLntzqn/torii360.webp") center/320px 672px no-repeat fixed;
+  }
+
+  body {
+    background-color: #dce2ec;
+  }
+
+  ul li {
+    font-size: 0.7rem;
+  }
+
+  .contacts {
+    margin-left: 5px;
+  }
+
+  form label {
+    font-size: 2rem;
+  }
+  form #submit {
+    font-size: 0.8rem;
+  }
+
+  .pricing_wrap p {
+    font-size: 1rem;
+  }
+
+  .example label {
+    line-height: 1rem !important;
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 250px) {
+  iframe {
+    width: 200px;
+  }
+
+  #header-img {
+    width: 27vw;
+  }
+
+  ul li {
+    font-size: 0.7rem;
+  }
+
+  form label {
+    font-size: 1.5rem;
+  }
+  form input {
+    width: 80vw;
+    min-width: 120px;
+    margin: 10px 0;
+  }
+  form #submit {
+    width: 120px;
+    min-width: 120px;
+  }
+
+  ul:hover li a:hover {
+    letter-spacing: 0px;
+  }
+
+  .footer {
+    padding-left: 10px;
+    line-height: 1rem;
+  }
+  .footer p {
+    font-size: 0.8rem !important;
+  }
+}
