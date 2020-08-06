@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/a6a7cbf154.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="background"></div>
+		<header id="header">
+		<img src="https://i.ibb.co/DkGqZdz/logo8.png" alt="logo" border="0" id="header-img">
+		<nav id="nav-bar">
+				<ul class="menu">
+				<li class="summary"><a href="#sum" class="nav-link">Summary</a></li>
+				<li class="video"><a href="#video" class="nav-link" id="how">How It Looks</a></li>
+				<li class="price"><a href="#price" class="nav-link">Pricing</a></li>
+				<li class="contacts"><a href="#contacts" class="nav-link">Contacts</a></li>	
+			</ul>
+		</nav>
+
+
+	</header>
+	<main>
+		<form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+		<label for="email" id="email-label">Hike with Us!</label><br>
+		<input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+		<input type="submit" id="submit" value="Let me know more">
+		<!-- 
+		Let me know more --></input>
+		</form>
+		
+
+		<div id="summary">
+			<a name="sum"></a>
+			<div class="feature" id="plan">
+				<p class="plan"><i class="fas fa-route"></i></p>
+				<p class="description">Always good plan. Best route, weather, and timing.</p>
+			</div>
+			<div class="feature">
+				<p class="plan"><i class="fas fa-medkit"></i></p>
+				<p class="description">
+				<a name="video"></a>
+			You won't need medkit, because plan is good. But just in case I know what to do.</p>
+			</div>
+			<div class="feature">
+				<p class="plan"><i class="fas fa-shuttle-van"></i></p>
+				<p class="description">The most convenient transfer to the starting point of the route.</p>
+			</div>
+			<div class="feature">
+				<p class="plan">
+				<i class="far fa-grin-stars"></i></p>
+				<p class="description">A lot of fun! The incomparable beauty of Nature and an unforgettable experience!</p>
+			</div>
+		</div>
+		
+		<div><iframe width="560" height="315" src="https://www.youtube.com/embed/LuWI0Y-8LVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe></div>
+	
+		<div class="pricing_wrap">
+			<p><a name="price"></a>How much I take? Here are some examples:</p>
+			<div class="pricing">
+				<div class="example">
+					<img src="https://i.ibb.co/F81XynF/Hinode.jpg" alt="Mount Hinode.jpg" id="hinode">
+					<label for="hinode" id="hinode_label">Mt. Hinode, 902m<br> 15 000¥/Group</label>
+				</div>
+				<div class="example">
+					<img src="https://i.ibb.co/2crx61Y/kinpu.jpg" alt="Mount Kinpu.jpg" id="kinpu">
+					<label for="kinpu" id="hinode_label">Mt. Kinpu, 2599m<br> 25 000¥/Group</label>
+				</div>
+				<div class="example">
+					<img src="https://i.ibb.co/gmxyg08/fuji.jpg" alt="Mount Fuji.jpg" id="fuji">
+					<label for="fuji" id="hinode_label">Mt. Fuji, 3776m<br> 40 000¥/Group</label>
+				</div>	
+			</div>
+
+		</div>
+	</main>
+	
+	<div class="footer">
+			<p class="contacts"><a name="contacts"></a>Chumakov Boris.&nbsp;&nbsp;tel. (+81) 90-0000-0000<br>Please use only if You do not recieve Email from me</p>
+	</div>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
